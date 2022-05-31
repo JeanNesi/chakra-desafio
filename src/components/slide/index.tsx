@@ -3,8 +3,6 @@ import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import dynamic from "next/dynamic";
 
-import '../../styles/slider.scss'
-
 const Continent = dynamic(() => import('./continent'),{
   ssr: false
 })
@@ -41,7 +39,7 @@ export default function Slide(){
           <Continent
             name="Asia"
             description="O maior continente do mundo"
-            image="url(https://images.unsplash.com/photo-1621584728858-616080e4bd01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"
+            image="url(img/sliderImg/Europa.svg)"
           />
         </SwiperSlide>
       </Swiper>

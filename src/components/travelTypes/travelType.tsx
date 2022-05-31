@@ -34,7 +34,7 @@ return (
   <Text
     color="#47585B"
     fontWeight='600'
-    fontSize='24'
+    fontSize={['18px','24px']}
     {...rest}
   >
     {title}

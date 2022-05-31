@@ -19,12 +19,23 @@ export default function Continent({name, description, image}: ContinentProps){
       bgPosition='center'
       color='white'
       textAlign='center'
-      backdropBlur="10px"
     >
       <Link href={`/continet/${name}`}>
         <a>
-          <Heading >{name}</Heading>
-          <Text>{description}</Text>
+          <Heading
+            mb="16px"
+            fontWeight='700'
+            fontSize={['24px','48px']}
+          >
+            {name}
+          </Heading>
+          <Text
+            fontWeight='700'
+            fontSize={['14px','24px']}
+            color='#DADADA'
+          >
+            {description}
+          </Text>
         </a>
       </Link>
     </Flex>

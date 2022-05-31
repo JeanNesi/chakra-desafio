@@ -3,7 +3,6 @@ import { Box, Flex, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/re
 export function Banner(){
   const isWideVersion = useBreakpointValue({
     base: false,
-    lg:false,
     xl: true
   })
 
@@ -35,7 +34,13 @@ export function Banner(){
           Chegou a hora de tirar do papel a viagem que você sempre sonhou. 
         </Text>
       </Stack>
-        {isWideVersion && <Image src="/img/Airplane.svg" position='absolute' top='76' right='140'/>}
+        {isWideVersion && <Image
+          src="/img/Airplane.svg"
+          position='absolute'
+          top='76'
+          right='140'
+        />
+        }
     </Flex>
   )
 }

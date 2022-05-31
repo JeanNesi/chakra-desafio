@@ -8,7 +8,7 @@ export function TravelTypes(){
       maxWidth={1440}
       position='relative'
       pt={['9','115']}
-      pb='20'
+      pb={['36px','20']}
       px='6'
       align='center'
       justify='center'
